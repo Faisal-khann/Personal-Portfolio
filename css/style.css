@@ -9707,18 +9707,18 @@ textarea.form-control {
     stroke-dashoffset: -136px; } }
 
 /* Additional change */
-.one-third {
+/* .one-third {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 100vh;     /* Prevent tiling */
-  width: 100%;       /* Full width */
+  height: 100vh;    
+  width: 100%;       
 }
 
 .js-fullheight {
-  height: 100vh;                     /* Full viewport height */
-  min-height: 1000px;                 /* Fallback for very small screens */
-}
+  height: 100vh;                     
+  min-height: 1000px;                 
+} */
 
 /* Make sure it stays responsive on smaller devices */
 @media (max-width: 768px) {
@@ -9738,4 +9738,3 @@ textarea.form-control {
   border: 1px solid #0056b3 !important;
   color: #fff !important;
 }
-/* ...existing code... */
