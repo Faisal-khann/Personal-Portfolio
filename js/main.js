@@ -276,24 +276,56 @@
 })(jQuery);
 // JavaScript for toggling the navigation menu
 // This code assumes you have a button with class 'navbar-toggler' and a close button with
+// document.addEventListener("DOMContentLoaded", function () {
+//   const body = document.body;
+//   const toggler = document.querySelector('.navbar-toggler');
+//   const closeBtn = document.querySelector('.navbar-close-btn');
+//   const navCollapse = document.querySelector('.navbar-collapse');
+
+//   if (toggler) {
+//     toggler.addEventListener('click', function () {
+//       body.classList.toggle('nav-open');
+//     });
+//   }
+
+//   if (closeBtn) {
+//     closeBtn.addEventListener('click', function () {
+//       body.classList.remove('nav-open');
+//       navCollapse.classList.remove('show');
+//     });
+//   }
+// });
+// JavaScript for handling the navigation menu
 document.addEventListener("DOMContentLoaded", function () {
+  const navbarCollapse = document.getElementById("ftco-nav");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const closeBtn = document.querySelector(".navbar-close-btn");
   const body = document.body;
-  const toggler = document.querySelector('.navbar-toggler');
-  const closeBtn = document.querySelector('.navbar-close-btn');
-  const navCollapse = document.querySelector('.navbar-collapse');
 
-  if (toggler) {
-    toggler.addEventListener('click', function () {
-      body.classList.toggle('nav-open');
+  // Close on link click
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navbarCollapse.classList.remove("show");
+      body.classList.remove("nav-open");
     });
-  }
+  });
 
-  if (closeBtn) {
-    closeBtn.addEventListener('click', function () {
-      body.classList.remove('nav-open');
-      navCollapse.classList.remove('show');
-    });
-  }
+  // Close on × button
+  closeBtn.addEventListener("click", () => {
+    navbarCollapse.classList.remove("show");
+    body.classList.remove("nav-open");
+  });
+
+  // Detect when menu is opened
+  navbarCollapse.addEventListener("shown.bs.collapse", () => {
+    body.classList.add("nav-open");
+  });
+
+  // Detect when menu is closed
+  navbarCollapse.addEventListener("hidden.bs.collapse", () => {
+    body.classList.remove("nav-open");
+  });
 });
+
 
 
