@@ -14011,3 +14011,174 @@ textarea.form-control {
 .menu-show .navbar-close {
   display: block;
 }
+
+/* Navbar Styles - Enhanced */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.7rem 28px;
+  color: #fff;
+  border-radius: 30px;
+  position: relative;
+  transition: all 0.35s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+}
+
+/* Underline animation */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff 0%, #ffbd39 100%);
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.35s ease-in-out;
+}
+
+/* Hover & Active Link */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus,
+.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+  background: linear-gradient(90deg, #007bff 0%, #ffbd39 100%);
+  color: #fff !important;
+  box-shadow: 0 4px 20px rgba(0,123,255,0.25);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover::after,
+.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link::after {
+  width: 50%;
+}
+
+/* Indicator styling */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span:before {
+  background: #fff;
+  height: 3px;
+  border-radius: 2px;
+  transition: background 0.3s ease-in-out;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover span:before {
+  background: #ffbd39;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 320px; /* fixed width */
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px) saturate(150%);
+    box-shadow: -4px 0 20px rgba(0,0,0,0.4);
+    padding-top: 70px; /* adjust for navbar height */
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+    z-index: 1050;
+  }
+
+  /* When open, slide in */
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  /* Prevent page content shift */
+  body.nav-open {
+    overflow: hidden;
+  }
+
+  /* Mobile nav links */
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+
+/* Custom Button Group */
+.custom-btn-group a.btn {
+  margin: 0 10px 10px 0;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0,123,255,0.12);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  letter-spacing: 1px;
+  padding: 0.8rem 2.2rem;
+}
+
+.custom-btn-group .btn-primary {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  border: none;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.custom-btn-group .btn-primary:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  color: #fff;
+  transform: translateY(-3px) scale(1.07);
+  box-shadow: 0 10px 28px rgba(0,123,255,0.25);
+}
+
+/* Outline White Button */
+.custom-btn-group .btn-outline-white {
+  background: #fff;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,123,255,0.08);
+}
+
+.custom-btn-group .btn-outline-white:hover {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff;
+  transform: translateY(-3px) scale(1.07);
+  box-shadow: 0 10px 28px rgba(0,123,255,0.25);
+}
+
+
+/* Hide close button on desktop */
+.navbar-close-btn {
+  display: none;
+}
+
+/* Show & style close button only on mobile */
+@media (max-width: 991.98px) {
+  .navbar-close-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 2000;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .navbar-close-btn:hover {
+    transform: scale(1.15);
+    color: #ffbd39;
+  }
+}
