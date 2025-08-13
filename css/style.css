@@ -13995,3 +13995,19 @@ textarea.form-control {
   border: 1px solid #0056b3 !important;
   color: #fff !important;
 }
+.navbar-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  z-index: 9999;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-show .navbar-close {
+  display: block;
+}

@@ -275,3 +275,6 @@
 
 })(jQuery);
 
+document.querySelector('.navbar-close').onclick = function() {
+  document.body.classList.remove('menu-show');
+};
