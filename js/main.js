@@ -275,26 +275,6 @@
 
 })(jQuery);
 // JavaScript for toggling the navigation menu
-// This code assumes you have a button with class 'navbar-toggler' and a close button with
-// document.addEventListener("DOMContentLoaded", function () {
-//   const body = document.body;
-//   const toggler = document.querySelector('.navbar-toggler');
-//   const closeBtn = document.querySelector('.navbar-close-btn');
-//   const navCollapse = document.querySelector('.navbar-collapse');
-
-//   if (toggler) {
-//     toggler.addEventListener('click', function () {
-//       body.classList.toggle('nav-open');
-//     });
-//   }
-
-//   if (closeBtn) {
-//     closeBtn.addEventListener('click', function () {
-//       body.classList.remove('nav-open');
-//       navCollapse.classList.remove('show');
-//     });
-//   }
-// });
 // JavaScript for handling the navigation menu
 document.addEventListener("DOMContentLoaded", function () {
   const navbarCollapse = document.getElementById("ftco-nav");
@@ -302,13 +282,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".navbar-close-btn");
   const body = document.body;
 
-  // Close on link click
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navbarCollapse.classList.remove("show");
-      body.classList.remove("nav-open");
-    });
-  });
+  // Close on link click -> Automatically close the navbar
+//   navLinks.forEach(link => {
+//     link.addEventListener("click", () => {
+//       navbarCollapse.classList.remove("show");
+//       body.classList.remove("nav-open");
+//     });
+//   });
 
   // Close on × button
   closeBtn.addEventListener("click", () => {

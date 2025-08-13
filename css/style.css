@@ -13995,6 +13995,7 @@ textarea.form-control {
   border: 1px solid #0056b3 !important;
   color: #fff !important;
 }
+
 .navbar-close {
   position: absolute;
   top: 20px;
@@ -14013,7 +14014,7 @@ textarea.form-control {
 }
 
 /* Navbar Styles - Enhanced */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -14022,11 +14023,11 @@ textarea.form-control {
   border-radius: 30px;
   position: relative;
   transition: all 0.35s ease-in-out;
-  box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.08);
 }
 
 /* Underline animation */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link::after {
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link::after {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -14040,29 +14041,29 @@ textarea.form-control {
 }
 
 /* Hover & Active Link */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:focus,
-.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover,
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:focus,
+.ftco-navbar-light .navbar-nav>.nav-item.active>.nav-link {
   background: linear-gradient(90deg, #007bff 0%, #ffbd39 100%);
   color: #fff !important;
-  box-shadow: 0 4px 20px rgba(0,123,255,0.25);
-  text-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.25);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover::after,
-.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link::after {
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover::after,
+.ftco-navbar-light .navbar-nav>.nav-item.active>.nav-link::after {
   width: 50%;
 }
 
 /* Indicator styling */
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span:before {
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link span:before {
   background: #fff;
   height: 3px;
   border-radius: 2px;
   transition: background 0.3s ease-in-out;
 }
 
-.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover span:before {
+.ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover span:before {
   background: #ffbd39;
 }
 
@@ -14076,7 +14077,7 @@ textarea.form-control {
     width: 250px;
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(12px);
-    box-shadow: -4px 0 20px rgba(0,0,0,0.4);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
     padding-top: 70px;
     transform: translateX(100%);
     transition: transform 0.35s ease-in-out;
@@ -14084,19 +14085,36 @@ textarea.form-control {
     overflow-y: auto;
 
     .navbar-nav {
-    text-align: center;
-    width: 100%;
-  }
+      text-align: center;
+      width: 100%;
+    }
 
-  .navbar-nav .nav-item {
-    width: 100%;
-  }
+    .navbar-nav .nav-item {
+      width: 100%;
+    }
 
-  .navbar-nav .nav-link {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
+    .navbar-nav .nav-link {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Add space between menu items */
+    .navbar-nav .nav-item {
+      margin-bottom: 12px;
+      /* Space in mobile view */
+    }
+
+    @media (min-width: 992px) {
+
+      /* Remove the space for desktop view */
+      .navbar-nav .nav-item {
+        margin-bottom: 0;
+        margin-right: 20px;
+        /* Optional horizontal gap for desktop */
+      }
+    }
+
 
   }
 
@@ -14125,7 +14143,7 @@ textarea.form-control {
   border-radius: 30px;
   font-size: 1.1rem;
   font-weight: 600;
-  box-shadow: 0 4px 16px rgba(0,123,255,0.12);
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.12);
   transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
   letter-spacing: 1px;
   padding: 0.8rem 2.2rem;
@@ -14139,15 +14157,15 @@ textarea.form-control {
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(0,123,255,0.15);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .custom-btn-group .btn-primary:hover {
   background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
   color: #fff;
   transform: translateY(-3px) scale(1.07);
-  box-shadow: 0 10px 28px rgba(0,123,255,0.25);
+  box-shadow: 0 10px 28px rgba(0, 123, 255, 0.25);
 }
 
 /* Outline White Button */
@@ -14159,14 +14177,14 @@ textarea.form-control {
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(0,123,255,0.08);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.08);
 }
 
 .custom-btn-group .btn-outline-white:hover {
   background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
   color: #fff;
   transform: translateY(-3px) scale(1.07);
-  box-shadow: 0 10px 28px rgba(0,123,255,0.25);
+  box-shadow: 0 10px 28px rgba(0, 123, 255, 0.25);
 }
 
 
