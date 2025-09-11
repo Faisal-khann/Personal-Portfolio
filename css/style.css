@@ -14215,3 +14215,49 @@ textarea.form-control {
     color: #ffbd39;
   }
 }
+
+/* styling for project card headings */
+/* Category Headings */
+.category-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Underline Effect */
+.category-heading::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: #007bff;
+  left: 20%;
+  bottom: 0;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.category-heading:hover {
+  color: #007bff;             /* Change text color to primary blue */
+  transform: scale(1.05);     /* Slight zoom */
+}
+
+.category-heading:hover::after {
+  width: 100%;                /* Underline expands fully */
+  left: 0;
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Extra spacing between categories */
+.row.mb-4.mt-5 {
+  margin-top: 60px !important;
+  margin-bottom: 40px !important;
+}
