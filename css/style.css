@@ -14261,3 +14261,53 @@ textarea.form-control {
   margin-top: 60px !important;
   margin-bottom: 40px !important;
 }
+
+
+.about-header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    position: relative;
+}
+
+.about-header .big {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #f0f0f0; /* subtle background effect */
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.about-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    position: relative;
+    display: inline-block;
+    color: #ff6b6b; /* vibrant color for visibility */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.about-header h2:hover {
+    transform: translateY(-5px); /* slight pop-out effect on hover */
+}
+
+.about-header h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #ff4757; /* more striking underline color */
+    margin: 8px auto 0;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.about-header h2:hover::after {
+    width: 80%;
+}
+

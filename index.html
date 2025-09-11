@@ -250,323 +250,263 @@
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
+			<div class="text-center mb-5 about-header">
+				<h1 class="big">About</h1>
+				<h2 class="mb-4">About Me</h2>
+			</div>
+
+
+
+			<!-- Main Content Below -->
 			<div class="row">
-				<div class="row d-flex align-items-stretch">
-					<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-										<div class="about-img">
-											<img src="images/profile_bg.jpg" class="img-fluid rounded b-shadow-a"
-												alt="">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay">
+							<!-- Compact Skills Section Box -->
+							<!-- Compact Skills Section Box with Hover Pop-Out Titles -->
+							<div class="skills-wrapper-compact">
+
+								<div class="skills-section">
+
+									<!-- Programming & Databases -->
+									<div class="skill-category">
+										<p class="title-s">Programming & Databases</p>
+										<div class="skill-item programming"><i class="fab fa-python"></i> Python
+										</div>
+										<div class="skill-item programming"><i class="fas fa-database"></i> SQL
+										</div>
+										<div class="skill-item programming"><i class="fas fa-database"></i> MySQL
+										</div>
+										<div class="skill-item programming"><i class="fas fa-database"></i> SQL
+											Server</div>
+									</div>
+
+									<!-- Libraries -->
+									<div class="skill-category">
+										<p class="title-s">Libraries</p>
+										<div class="skill-item libraries"><i class="fas fa-code"></i> Pandas</div>
+										<div class="skill-item libraries"><i class="fas fa-code"></i> NumPy</div>
+										<div class="skill-item libraries"><i class="fas fa-code"></i> Scikit-learn
+										</div>
+										<div class="skill-item libraries"><i class="fas fa-chart-line"></i>
+											Matplotlib</div>
+										<div class="skill-item libraries"><i class="fas fa-chart-bar"></i> Seaborn
 										</div>
 									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-										<div class="about-info">
-											<p><span class="title-s">Name: </span> <span>Faisal Khan</span></p>
-											<!-- <p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p> -->
-											<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
-											<p><span class="title-s">Address: </span> <span>New Delhi, India</span></p>
-										</div>
+
+									<!-- Machine Learning -->
+									<div class="skill-category">
+										<p class="title-s">Machine Learning</p>
+										<div class="skill-item machine-learning"><i class="fas fa-robot"></i>
+											Supervised & Unsupervised</div>
+										<div class="skill-item machine-learning"><i class="fas fa-cogs"></i> Feature
+											Engineering</div>
+										<div class="skill-item machine-learning"><i class="fas fa-vial"></i> Model
+											Evaluation</div>
+										<div class="skill-item machine-learning"><i class="fas fa-chart-pie"></i>
+											Statistics</div>
 									</div>
+
+									<!-- Data Analytics & BI -->
+									<div class="skill-category">
+										<p class="title-s">Data Analytics & BI</p>
+										<div class="skill-item analytics"><i class="fas fa-chart-area"></i> Power BI
+										</div>
+										<div class="skill-item analytics"><i class="fas fa-table"></i> Advanced
+											Excel</div>
+										<div class="skill-item analytics"><i class="fas fa-project-diagram"></i> ETL
+										</div>
+										<div class="skill-item analytics"><i class="fas fa-database"></i> Data
+											Modeling</div>
+										<div class="skill-item analytics"><i class="fas fa-search"></i> EDA</div>
+										<div class="skill-item analytics"><i class="fas fa-tachometer-alt"></i>
+											Dashboarding</div>
+										<div class="skill-item analytics"><i class="fas fa-book"></i> Data
+											Storytelling</div>
+									</div>
+
+									<!-- Version Control & Tools -->
+									<div class="skill-category">
+										<p class="title-s">Version Control & Tools</p>
+										<div class="skill-item tools"><i class="fab fa-git-alt"></i> Git</div>
+										<div class="skill-item tools"><i class="fab fa-github"></i> GitHub</div>
+										<div class="skill-item tools"><i class="fas fa-book-open"></i> Jupyter
+											Notebook</div>
+										<div class="skill-item tools"><i class="fas fa-paint-brush"></i> Canva</div>
+									</div>
+
 								</div>
+							</div>
 
-								<!-- <div class="skill-mf">
-									<p class="title-s">Skills</p>
+							<style>
+								/* Compact Box */
+								.skills-wrapper-compact {
+									background: #cad9e8;
+									padding: 15px 20px;
+									border-radius: 15px;
+									box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+									max-width: 1000px;
+									margin: 30px auto;
+								}
 
-									<span>Python</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+								.skills-section {
+									display: flex;
+									flex-wrap: wrap;
+									gap: 20px;
+									font-family: Arial, sans-serif;
+								}
 
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;"
-											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+								.skill-category {
+									flex: 1 1 220px;
+								}
 
-									<span>Data Visualization</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%"
-											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+								.skill-category p.title-s {
+									font-weight: bold;
+									margin-bottom: 10px;
+									font-size: 15px;
+									color: #0a0a0a;
+									position: relative;
+									cursor: pointer;
+									transition: transform 0.3s ease;
+									/* smooth pop-out */
+								}
 
-									<span>Statistical Analysis</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%"
-											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
+								/* Underline Hover Effect */
+								.skill-category p.title-s::after {
+									content: '';
+									position: absolute;
+									width: 0;
+									height: 2px;
+									bottom: -3px;
+									left: 0;
+									background-color: #5d00ff;
+									/* underline color */
+									transition: width 0.3s ease;
+								}
 
-									<span>Machine Learning</span> <span class="pull-right">87%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 87%"
-											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div> -->
+								/* Hover: pop-out + underline */
+								.skill-category p.title-s:hover {
+									transform: scale(1.05);
+									/* slight pop-out */
+								}
 
-								<!-- Compact Skills Section Box with Hover Pop-Out Titles -->
-								<div class="skills-wrapper-compact">
+								.skill-category p.title-s:hover::after {
+									width: 100%;
+								}
 
-									<div class="skills-section">
+								/* Skill badges */
+								.skill-item {
+									display: inline-flex;
+									align-items: center;
+									gap: 6px;
+									padding: 5px 10px;
+									border-radius: 18px;
+									margin: 4px 4px 0 0;
+									font-size: 13px;
+									color: #fff;
+									transition: all 0.3s ease;
+									cursor: pointer;
+								}
 
-										<!-- Programming & Databases -->
-										<div class="skill-category">
-											<p class="title-s">Programming & Databases</p>
-											<div class="skill-item programming"><i class="fab fa-python"></i> Python
-											</div>
-											<div class="skill-item programming"><i class="fas fa-database"></i> SQL
-											</div>
-											<div class="skill-item programming"><i class="fas fa-database"></i> MySQL
-											</div>
-											<div class="skill-item programming"><i class="fas fa-database"></i> SQL
-												Server</div>
-										</div>
+								.skill-item:hover {
+									transform: scale(1.1);
+									box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+								}
 
-										<!-- Libraries -->
-										<div class="skill-category">
-											<p class="title-s">Libraries</p>
-											<div class="skill-item libraries"><i class="fas fa-code"></i> Pandas</div>
-											<div class="skill-item libraries"><i class="fas fa-code"></i> NumPy</div>
-											<div class="skill-item libraries"><i class="fas fa-code"></i> Scikit-learn
-											</div>
-											<div class="skill-item libraries"><i class="fas fa-chart-line"></i>
-												Matplotlib</div>
-											<div class="skill-item libraries"><i class="fas fa-chart-bar"></i> Seaborn
-											</div>
-										</div>
+								/* Colors per category */
+								.programming {
+									background-color: #4CAF50;
+								}
 
-										<!-- Machine Learning -->
-										<div class="skill-category">
-											<p class="title-s">Machine Learning</p>
-											<div class="skill-item machine-learning"><i class="fas fa-robot"></i>
-												Supervised & Unsupervised</div>
-											<div class="skill-item machine-learning"><i class="fas fa-cogs"></i> Feature
-												Engineering</div>
-											<div class="skill-item machine-learning"><i class="fas fa-vial"></i> Model
-												Evaluation</div>
-											<div class="skill-item machine-learning"><i class="fas fa-chart-pie"></i>
-												Statistics</div>
-										</div>
+								.libraries {
+									background-color: #2196F3;
+								}
 
-										<!-- Data Analytics & BI -->
-										<div class="skill-category">
-											<p class="title-s">Data Analytics & BI</p>
-											<div class="skill-item analytics"><i class="fas fa-chart-area"></i> Power BI
-											</div>
-											<div class="skill-item analytics"><i class="fas fa-table"></i> Advanced
-												Excel</div>
-											<div class="skill-item analytics"><i class="fas fa-project-diagram"></i> ETL
-											</div>
-											<div class="skill-item analytics"><i class="fas fa-database"></i> Data
-												Modeling</div>
-											<div class="skill-item analytics"><i class="fas fa-search"></i> EDA</div>
-											<div class="skill-item analytics"><i class="fas fa-tachometer-alt"></i>
-												Dashboarding</div>
-											<div class="skill-item analytics"><i class="fas fa-book"></i> Data
-												Storytelling</div>
-										</div>
+								.machine-learning {
+									background-color: #25cfd599;
+								}
 
-										<!-- Version Control & Tools -->
-										<div class="skill-category">
-											<p class="title-s">Version Control & Tools</p>
-											<div class="skill-item tools"><i class="fab fa-git-alt"></i> Git</div>
-											<div class="skill-item tools"><i class="fab fa-github"></i> GitHub</div>
-											<div class="skill-item tools"><i class="fas fa-book-open"></i> Jupyter
-												Notebook</div>
-											<div class="skill-item tools"><i class="fas fa-paint-brush"></i> Canva</div>
-										</div>
+								.analytics {
+									background-color: #9C27B0;
+								}
 
-									</div>
-								</div>
+								.tools {
+									background-color: #F44336;
+								}
 
-								<style>
-									/* Compact Box */
-									.skills-wrapper-compact {
-										background: #cad9e8;
-										padding: 15px 20px;
-										border-radius: 15px;
-										box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-										max-width: 1000px;
-										margin: 30px auto;
-									}
+								/* Icon styling */
+								.skill-item i {
+									font-size: 13px;
+								}
 
+								/* Responsive */
+								@media (max-width: 768px) {
 									.skills-section {
-										display: flex;
-										flex-wrap: wrap;
-										gap: 20px;
-										font-family: Arial, sans-serif;
+										flex-direction: column;
+										gap: 15px;
+										align-items: center;
 									}
 
 									.skill-category {
-										flex: 1 1 220px;
+										flex: 1 1 100%;
 									}
 
 									.skill-category p.title-s {
-										font-weight: bold;
-										margin-bottom: 10px;
-										font-size: 15px;
-										color: #0a0a0a;
-										position: relative;
-										cursor: pointer;
-										transition: transform 0.3s ease;
-										/* smooth pop-out */
+										font-size: 14px;
 									}
 
-									/* Underline Hover Effect */
-									.skill-category p.title-s::after {
-										content: '';
-										position: absolute;
-										width: 0;
-										height: 2px;
-										bottom: -3px;
-										left: 0;
-										background-color: #5d00ff;
-										/* underline color */
-										transition: width 0.3s ease;
-									}
-
-									/* Hover: pop-out + underline */
-									.skill-category p.title-s:hover {
-										transform: scale(1.05);
-										/* slight pop-out */
-									}
-
-									.skill-category p.title-s:hover::after {
-										width: 100%;
-									}
-
-									/* Skill badges */
 									.skill-item {
-										display: inline-flex;
-										align-items: center;
-										gap: 6px;
-										padding: 5px 10px;
-										border-radius: 18px;
-										margin: 4px 4px 0 0;
-										font-size: 13px;
-										color: #fff;
-										transition: all 0.3s ease;
-										cursor: pointer;
+										font-size: 12px;
+										padding: 4px 8px;
 									}
 
-									.skill-item:hover {
-										transform: scale(1.1);
-										box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
-									}
-
-									/* Colors per category */
-									.programming {
-										background-color: #4CAF50;
-									}
-
-									.libraries {
-										background-color: #2196F3;
-									}
-
-									.machine-learning {
-										background-color: #25cfd599;
-									}
-
-									.analytics {
-										background-color: #9C27B0;
-									}
-
-									.tools {
-										background-color: #F44336;
-									}
-
-									/* Icon styling */
 									.skill-item i {
-										font-size: 13px;
+										font-size: 12px;
 									}
+								}
+							</style>
+						</div>
+					</div>
+				</div>
 
-									/* Responsive */
-									@media (max-width: 768px) {
-										.skills-section {
-											flex-direction: column;
-											gap: 15px;
-											align-items: center;
-										}
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<p>B. Tech CSE graduate passionate about turning data into actionable insights. I have hands-on
+						experience with Data Analysis, SQL, Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn),
+						Power BI, and Advanced Excel. I specialize in building interactive dashboards, performing
+						feature engineering, and developing predictive models. With a strong foundation in Machine
+						Learning, Exploratory Data Analysis (EDA), and Business Intelligence, I enjoy delivering
+						data-driven solutions that solve real-world problems.</p>
 
-										.skill-category {
-											flex: 1 1 100%;
-										}
+					<ul class="about-info mt-4 px-md-0 px-2">
+						<li class="d-flex"><span>Profile:</span> <span>Data Science & Analytics</span></li>
+						<li class="d-flex"><span>Education:</span> <span>B.Tech CSE</span></li>
+						<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+						<li class="d-flex"><span>Location:</span> <span>New Delhi, India</span></li>
+						<li class="d-flex"><span>Interests:</span> <span>Data Science, Data Analytics, Machine Learning,
+								Data Visualization & Business Intelligence</span></li>
+						<li class="d-flex"><span>Hobbies:</span> <span>Reading, Travelling, Travel Photography &
+								Cooking</span></li>
+					</ul>
 
-										.skill-category p.title-s {
-											font-size: 14px;
-										}
-
-										.skill-item {
-											font-size: 12px;
-											padding: 4px 8px;
-										}
-
-										.skill-item i {
-											font-size: 12px;
-										}
-									}
-								</style>
-
-
-							</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number" data-number="15">0</span> <span>+</span>
+								<span>&nbsp; Projects completed</span>
+							</p>
+							<p class="custom-btn-group">
+								<a href="https://github.com/Faisal-khann" class="btn btn-primary py-3 px-3">GitHub</a>
+								<a href="https://app.mavenanalytics.io/portfolio"
+									class="btn btn-primary py-3 px-3">MavenAnalytics</a>
+							</p>
 						</div>
 					</div>
 
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-
-								<p>B. Tech CSE graduate passionate about turning data into actionable insights. I have
-									hands-on experience with Data Analysis, SQL, Python (Pandas, NumPy, Matplotlib,
-									Seaborn, Scikit-learn), Power BI, and Advanced Excel. I specialize in building
-									interactive dashboards, performing feature engineering, and developing predictive
-									models. With a strong foundation in Machine Learning, Exploratory Data Analysis
-									(EDA), and Business Intelligence, I enjoy delivering data-driven solutions that
-									solve real-world problems.
-								</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span>
-									</li>
-									<!-- <li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li> -->
-									<li class="d-flex"><span>Education:</span> <span>B.Tech CSE</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Location:</span> <span>New Delhi, India</span></li>
-									<li class="d-flex"><span>Interests:</span> <span>Data Science, Data Analytics,
-											Machine Learning, Data Visualization &amp; Business Intelligence</span></li>
-									<!-- <li class="d-flex"><span>Tools:</span> <span>Python, SQL, Power BI, Excel, Jupyter Notebook &amp; Git</span></li> -->
-									<li class="d-flex"><span>Hobbies:</span> <span>Reading, Travelling, Travel
-											Photography &amp; Cooking</span></li>
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="15">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p class="custom-btn-group"><a href="https://github.com/Faisal-khann"
-										class="btn btn-primary py-3 px-3">GitHub</a>
-									<!-- <a href="https://app.powerbi.com/groups/me/list?experience=power-bi/" class="btn btn-primary py-3 px-3">PowerBi Workspace</a> -->
-									<a href="https://app.mavenanalytics.io/portfolio"
-										class="btn btn-primary py-3 px-3">MavenAnalytics</a>
-								</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 
 
