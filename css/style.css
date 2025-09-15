@@ -14315,9 +14315,9 @@ textarea.form-control {
 /* Skills Section */
 /* Compact Box */
 .skills-wrapper-compact {
-  background: #cad9e8;
+  /* background: #cad9e8; */
   padding: 10px 15px;   /* reduced inner spacing */
-  border-radius: 12px;  /* slightly smaller rounded corners */
+  border-radius: 0px;  /* slightly smaller rounded corners */
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
   max-width: 900px;     /* box width reduced */
   margin: 20px auto;    /* less gap from outside */
@@ -14339,7 +14339,7 @@ textarea.form-control {
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 15px;
-  color: #0a0a0a;
+  color: white;
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease;
