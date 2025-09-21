@@ -14455,3 +14455,16 @@ textarea.form-control {
   background: linear-gradient(90deg, #ff4d4d, #ff9966);
   box-shadow: 0 0 10px rgba(255, 77, 77, 0.6);
 }
+
+/* Responsive project background*/
+.block-20 {
+  width: 100%;                  /* full width of container (adjusts on mobile) */
+  max-width: 500px;             /* prevents it from getting too large on desktop */
+  aspect-ratio: 5 / 3;          /* same ratio as 500×300 */
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 20px;
+  margin: 0 auto;               /* centers it on larger screens */
+}
+
