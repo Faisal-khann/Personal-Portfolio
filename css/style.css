@@ -14457,23 +14457,35 @@ textarea.form-control {
 }
 
 /* Responsive project background*/
-.block-20 {
-  width: 100%;                  /* full width of container (adjusts on mobile) */
-  max-width: 500px;             /* prevents it from getting too large on desktop */
-  aspect-ratio: 5 / 3;          /* same ratio as 500×300 */
+/* .block-20 {
+  width: 100%;                
+  max-width: 500px;             
+  aspect-ratio: 5 / 3;          
   background-size: cover;
   background-position: center;
   display: block;
   border-radius: 20px;
-  margin: 0 auto;               /* centers it on larger screens */
-}
-@media (max-width: 576px) {
+  margin: 0 auto;               
+} */
+/* @media (max-width: 576px) {
   .block-20 {
-    max-width: 100%;            /* full width on small screens */
-    aspect-ratio: auto;         /* lets height adjust naturally */
-    height: auto;               /* height adjusts based on content */
+    max-width: 100%;            
+    aspect-ratio: auto;       
+    height: auto;               
   }
+} */
+
+.block-20 {
+  width: 100%;                  /* full width of container */
+  max-width: 500px;             /* max width on large screens */
+  height: 300px;                /* fixed height */
+  background-size: cover;
+  background-position: center;
+  display: block;
+  border-radius: 20px;
+  margin: 0 auto;               /* center horizontally */
 }
+
 
 
 
