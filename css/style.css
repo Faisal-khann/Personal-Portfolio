@@ -14467,4 +14467,13 @@ textarea.form-control {
   border-radius: 20px;
   margin: 0 auto;               /* centers it on larger screens */
 }
+@media (max-width: 576px) {
+  .block-20 {
+    max-width: 100%;            /* full width on small screens */
+    aspect-ratio: auto;         /* lets height adjust naturally */
+    height: auto;               /* height adjusts based on content */
+  }
+}
+
+
 
