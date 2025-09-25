@@ -14341,7 +14341,7 @@ textarea.form-control {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease;
-  font-style: italic; /* Added to make text italic */
+  font-style: italic; 
 }
 
 /* Underline Hover Effect */
@@ -14364,37 +14364,6 @@ textarea.form-control {
   width: 100%;
 }
 
-/* Skill badges */
-.skill-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 10px;
-  border-radius: 18px;
-  margin: 4px 4px 0 0;
-  font-size: 13px;
-  color: #fff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.skill-item:hover {
-  transform: scale(1.1);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
-}
-
-/* Colors per category */
-.programming { background-color: #4CAF50; }
-.libraries { background-color: #2196F3; }
-.machine-learning { background-color: #25cfd599; }
-.analytics { background-color: #9C27B0; }
-.tools { background-color: #F44336; }
-
-/* Icon styling */
-.skill-item i {
-  font-size: 13px;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .skills-section {
@@ -14408,14 +14377,13 @@ textarea.form-control {
   .skill-item i { font-size: 12px; }
 }
 
-
-/*center button*/
+/*center button for github and maven-analyst*/
 .counter-wrap {
   display: flex;
-  justify-content: center;  /* center horizontally */
-  align-items: center;      /* center vertically if needed */
-  margin-top: 30px;         /* space from skills box */
-  text-align: center;       /* center text inside */
+  justify-content: center;  
+  align-items: center;     
+  margin-top: 30px;        
+  text-align: center;      
 }
 
 .counter-wrap .text {
@@ -14423,7 +14391,6 @@ textarea.form-control {
 }
 
 /* Css for skill header */
-/* Custom Skills Heading */
 .skills-heading {
   font-size: 42px;
   font-weight: 700;
