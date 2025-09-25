@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaScript for toggling the navigation menu
+
 
 
 
