@@ -14401,10 +14401,10 @@ textarea.form-control {
 /* Responsive sizes for mobile */
 @media (max-width: 768px) {
     .about-header h1.big {
-        font-size: 30px; /* smaller size for mobile */
+        font-size: 100px; /* smaller size for mobile */
     }
     .about-header h2 {
-        font-size: 20px; /* smaller size for mobile */
+        font-size: 50px; /* smaller size for mobile */
     }
 }
 
