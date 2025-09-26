@@ -14097,7 +14097,6 @@ textarea.form-control {
       .navbar-nav .nav-item {
         margin-bottom: 0;
         margin-right: 20px;
-        /* Optional horizontal gap for desktop */
       }
     }
 
@@ -14207,7 +14206,7 @@ textarea.form-control {
 .category-heading {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #333;
+  color: var(--white);
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
