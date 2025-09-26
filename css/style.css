@@ -14316,23 +14316,39 @@ textarea.form-control {
 
 /* Compact Box */
 .skills-wrapper-compact {
-  /* padding: 10px 10px;    */
-  max-width: 800px;     /* box width reduced */
-  margin: 10px auto;    /* less gap from outside */
+  max-width: 800px;
+  margin: 10px auto;
+  will-change: transform; /* helps GPU handle rendering */
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .skills-section {
+    display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
-  .skill-category { flex: 1 1 100%; }
-  .skill-category p.title-s { font-size: 14px; }
-  .skill-item { font-size: 12px; padding: 4px 8px; }
-  .skill-item i { font-size: 12px; }
+  .skill-category {
+    flex: 1 1 100%;
+  }
+  .skill-category p.title-s {
+    font-size: 14px;
+  }
+  .skill-item {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .skill-item i {
+    font-size: 12px;
+  }
 }
+
+/* Prevent flicker due to transitions on resize */
+.skills-section, .skill-category, .skill-item {
+  transition: none !important;
+}
+
 
 /*center button for github and maven-analyst*/
 .counter-wrap {
