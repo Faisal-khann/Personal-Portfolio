@@ -14316,39 +14316,81 @@ textarea.form-control {
 
 /* Compact Box */
 .skills-wrapper-compact {
-  max-width: 800px;
-  margin: 10px auto;
-  will-change: transform; /* helps GPU handle rendering */
+  padding: 10px 10px;   
+  max-width: 800px;     /* box width reduced */
+  margin: 10px auto;    /* less gap from outside */
+  border-radius: 2px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .skills-section {
-    display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
   }
-  .skill-category {
-    flex: 1 1 100%;
-  }
-  .skill-category p.title-s {
-    font-size: 14px;
-  }
-  .skill-item {
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-  .skill-item i {
-    font-size: 12px;
-  }
+  .skill-category { flex: 1 1 100%; }
+  .skill-category p.title-s { font-size: 14px; }
+  .skill-item { font-size: 12px; padding: 4px 8px; }
+  .skill-item i { font-size: 12px; }
+}
+/* Skill table items */
+.skills-heading {
+  color: white;
+  font-weight: bold;
 }
 
-/* Prevent flicker due to transitions on resize */
-.skills-section, .skill-category, .skill-item {
-  transition: none !important;
+.skills-table-container {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+  overflow-x: hidden; /* stop popout scroll */
 }
 
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.skills-table th {
+  background-color: #333;
+}
+
+.skills-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+.skills-table tr:nth-child(odd) {
+  background-color: #1e1e1e;
+}
+
+.skills-table img {
+  margin: 2px 4px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .skills-table {
+    font-size: 12px;
+  }
+  .skills-table img {
+    height: 18px;
+  }
+  .skills-table-container {
+    overflow-x: auto; /* allow scroll only if needed */
+  }
+}
 
 /*center button for github and maven-analyst*/
 .counter-wrap {
