@@ -13960,20 +13960,6 @@ textarea.form-control {
   }
 }
 
-/* Additional change */
-/* .one-third {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top center;
-  height: 100vh;    
-  width: 100%;       
-}
-
-.js-fullheight {
-  height: 100vh;                     
-  min-height: 1000px;                 
-} */
-
 /* Make sure it stays responsive on smaller devices */
 @media (max-width: 768px) {
   .js-fullheight {
@@ -14244,12 +14230,6 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-.category-heading:hover {
-  color: #007bff;             /* Change text color to primary blue */
-  transform: scale(1.05);     /* Slight zoom */
-}
-
 .category-heading:hover::after {
   width: 100%;                /* Underline expands fully */
   left: 0;
@@ -14288,12 +14268,7 @@ textarea.form-control {
     position: relative;
     display: inline-block;
     color: #ff6b6b; /* vibrant color for visibility */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* subtle shadow for depth */
     transition: transform 0.3s ease;
-}
-
-.about-header h2:hover {
-    transform: translateY(-5px); /* slight pop-out effect on hover */
 }
 
 .about-header h2::after {

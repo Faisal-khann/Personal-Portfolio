@@ -190,15 +190,19 @@
 
 			.about-text {
 				font-size: 16px;
-				line-height: 1.4;
+				line-height: 1.6;
 				text-align: justify;
 				margin-bottom: 1.2em;
+				transform: none !important;
+				/* disable hidden transforms */
+				will-change: auto !important;
+				/* stop forcing GPU render */
 			}
 
 			@media (max-width: 768px) {
 				.about-text {
 					font-size: 15px;
-					line-height: 1.3;
+					line-height: 1.4;
 				}
 			}
 
@@ -218,10 +222,8 @@
 				text-decoration: none;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 				transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
-				will-change: transform, box-shadow, background, color;
 				display: inline-block;
-				backface-visibility: hidden;
-				transform: translateZ(0);
+				/* 🔴 removed will-change, backface-visibility, translateZ(0) */
 			}
 
 			/* LinkedIn Button */
