@@ -194,15 +194,16 @@
 				text-align: justify;
 				margin-bottom: 1.2em;
 				transform: none !important;
-				/* disable hidden transforms */
+				/* ✅ Prevents unwanted pop-out */
 				will-change: auto !important;
-				/* stop forcing GPU render */
+				/* ✅ Stops forced GPU rendering */
 			}
 
 			@media (max-width: 768px) {
 				.about-text {
 					font-size: 15px;
-					line-height: 1.4;
+					line-height: 1.6;
+					/* keep same line-height for smooth rendering */
 				}
 			}
 
@@ -223,7 +224,7 @@
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 				transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
 				display: inline-block;
-				/* 🔴 removed will-change, backface-visibility, translateZ(0) */
+				/* ❌ removed will-change, backface-visibility, translateZ(0) */
 			}
 
 			/* LinkedIn Button */
@@ -233,23 +234,11 @@
 				border: none;
 			}
 
-			.custom-btn-group a.linkedin:hover {
-				transform: scale(1.05);
-				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-			}
-
 			/* GitHub Button */
 			.custom-btn-group a.github {
 				background: #fff;
 				color: #333;
 				border: 2px solid #333;
-			}
-
-			.custom-btn-group a.github:hover {
-				background: #333;
-				color: #fff;
-				transform: scale(1.05);
-				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 			}
 
 			/* Resume Button */
@@ -259,17 +248,32 @@
 				border: 2px solid #ff6b6b;
 			}
 
-			.custom-btn-group a.resume:hover {
-				background: #ff6b6b;
-				color: #fff;
-				transform: scale(1.05);
-				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-			}
-
 			@media (max-width: 768px) {
 				.custom-btn-group a {
 					padding: 10px 20px;
 					font-size: 14px;
+				}
+			}
+
+			/* ✅ Hover effects only on devices that actually support hover (desktop) */
+			@media (hover: hover) and (pointer: fine) {
+				.custom-btn-group a.linkedin:hover {
+					transform: scale(1.05);
+					box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+				}
+
+				.custom-btn-group a.github:hover {
+					background: #333;
+					color: #fff;
+					transform: scale(1.05);
+					box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+				}
+
+				.custom-btn-group a.resume:hover {
+					background: #ff6b6b;
+					color: #fff;
+					transform: scale(1.05);
+					box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 				}
 			}
 		</style>
