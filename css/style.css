@@ -13982,8 +13982,22 @@ textarea.form-control {
   color: #fff !important;
 }
 
+/* Navbar Styles */
+#ftco-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+body {
+  padding-top: 70px; /* Adjust according to navbar height */
+}
+
+
 .navbar-close {
-  position: absolute;
+  /* position: absolute; */
+  position:fixed;
   top: 20px;
   right: 20px;
   font-size: 2rem;
@@ -14117,24 +14131,6 @@ textarea.form-control {
     transform: translateX(0);
   }
 }
-
-/* ========== OPTION 2: Dropdown (Slide Down) ========== */
-/* @media (max-width: 991.98px) {
-  .navbar-collapse.dropdown-nav {
-    position: absolute;
-    top: 100%;  
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 15px 0;
-    transform: translateY(-100%);
-    transition: transform 0.35s ease-in-out;
-  }
-
-  .navbar-collapse.dropdown-nav.show {
-    transform: translateY(0);
-  }
-} */
 
 /* Custom Button Group */
 .custom-btn-group a.btn {
@@ -14453,6 +14449,8 @@ textarea.form-control {
         font-size: 30px; /* smaller size for mobile */
     }
 }
+
+
 
 
 
