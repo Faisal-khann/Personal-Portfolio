@@ -282,14 +282,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".navbar-close-btn");
   const body = document.body;
 
-  // Close on link click -> Automatically close the navbar
-//   navLinks.forEach(link => {
-//     link.addEventListener("click", () => {
-//       navbarCollapse.classList.remove("show");
-//       body.classList.remove("nav-open");
-//     });
-//   });
-
+  // Close menu on link click
   // Close on × button
   closeBtn.addEventListener("click", () => {
     navbarCollapse.classList.remove("show");

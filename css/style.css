@@ -14053,26 +14053,13 @@ textarea.form-control {
   background: #ffbd39;
 }
 
-/* Responsive Navbar - Mobile Drawer */
+/* ========== COMMON STYLES ========== */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;   /* full screen height */
-    width: 250px;   /* drawer width */
     background: rgba(0, 0, 0, 0.85);
     backdrop-filter: blur(12px);
-    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
-    padding-top: 70px;
-    transform: translateX(100%);   /* hidden by default */
-    transition: transform 0.35s ease-in-out;
     z-index: 1050;
-    overflow-y: auto; /* agar items jyada ho to scroll ho jaye */
-  }
-
-  .navbar-collapse.show {
-    transform: translateX(0); /* visible when toggled */
+    overflow-y: auto;
   }
 
   .navbar-nav {
@@ -14090,18 +14077,8 @@ textarea.form-control {
     width: 100%;
     text-align: center;
   }
-}
 
-/* Desktop view - spacing adjust */
-@media (min-width: 992px) {
-  .navbar-nav .nav-item {
-    margin-bottom: 0;
-    margin-right: 20px;
-  }
-}
-
-
-  /* Close button visible only on mobile */
+  /* Close button (for drawer only, but safe to keep) */
   .navbar-close-btn {
     background: none;
     border: none;
@@ -14112,6 +14089,52 @@ textarea.form-control {
     right: 15px;
     cursor: pointer;
   }
+}
+
+/* Desktop spacing */
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+/* ========== OPTION 1: Drawer (Side Navigation) ========== */
+@media (max-width: 991.98px) {
+  .navbar-collapse.drawer-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    padding-top: 70px;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.4);
+    transform: translateX(100%);
+    transition: transform 0.35s ease-in-out;
+  }
+
+  .navbar-collapse.drawer-nav.show {
+    transform: translateX(0);
+  }
+}
+
+/* ========== OPTION 2: Dropdown (Slide Down) ========== */
+/* @media (max-width: 991.98px) {
+  .navbar-collapse.dropdown-nav {
+    position: absolute;
+    top: 100%;  
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+    transform: translateY(-100%);
+    transition: transform 0.35s ease-in-out;
+  }
+
+  .navbar-collapse.dropdown-nav.show {
+    transform: translateY(0);
+  }
+} */
 
 /* Custom Button Group */
 .custom-btn-group a.btn {
