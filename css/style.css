@@ -13474,15 +13474,6 @@ textarea.form-control {
   color: #fff;
 }
 
-/* Apply hover effects only on devices that support hover */
-@media (hover: hover) {
-  .blog-entry .text .heading a:hover,
-  .blog-entry .text .heading a:focus,
-  .blog-entry .text .heading a:active {
-    color: #ffbd39;
-  }
-}
-
 .block-23 ul {
   padding: 0;
 }
