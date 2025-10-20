@@ -14462,6 +14462,32 @@ html, body {
   overflow-x: hidden;  /* left-right movement remove */
 }
 
+/* <!-- Blog Image Styles --> */
+.blog-img {
+    width: 100%;
+    height: auto; /* mobile-friendly scaling */
+    object-fit: cover; /* crops nicely if container grows */
+}
+
+/* Optional: set fixed height for larger screens */
+@media (min-width: 768px) {
+    .blog-img {
+        height: 280px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blog-img {
+        height: 320px;
+    }
+}
+
+/* Add spacing inside cards */
+.blog-entry {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
