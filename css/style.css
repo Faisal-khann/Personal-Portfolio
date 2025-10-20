@@ -14462,40 +14462,6 @@ html, body {
   overflow-x: hidden;  /* left-right movement remove */
 }
 
-/* <!-- Blog Image Styles --> */
-.blog-img {
-    width: 100%;
-    height: 180px; /* reduce height for shorter look */
-    object-fit: cover; /* ensures image fills the area neatly */
-    border-radius: 10px; /* optional: soft corners */
-    transition: transform 0.3s ease;
-}
-
-/* Adjust for different screen sizes */
-@media (min-width: 768px) {
-    .blog-img {
-        height: 200px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .blog-img {
-        height: 220px;
-    }
-}
-
-/* Add spacing inside cards */
-.blog-entry {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
-
-
 
 
 
