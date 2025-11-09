@@ -300,8 +300,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
+window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("ftco-navbar");
+  if (window.scrollY > 30) {
+    navbar.classList.add("scrolled-nav");
+  } else {
+    navbar.classList.remove("scrolled-nav");
+  }
+});
 
 
 

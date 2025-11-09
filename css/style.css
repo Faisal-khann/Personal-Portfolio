@@ -13992,14 +13992,23 @@ textarea.form-control {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: rgba(15, 60, 120, 0.92); /* minimal blueish tone */
-  backdrop-filter: blur(10px); /* modern glassy look */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  backdrop-filter: blur(14px);           /* soft blur for glass effect */
+  -webkit-backdrop-filter: blur(14px);   /* Safari support */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* subtle divider line */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease;
+}
+/* On Scroll - more opaque */
+.scrolled-nav {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
+
 body {
-  padding-top: 65px; /* adjust for navbar height */
+  padding-top: 70px; /* adjust for navbar height */
 }
 
 /* ================= NAV LINKS ================= */
@@ -14007,7 +14016,7 @@ body {
   font-size: 17px;
   font-weight: 600;
   letter-spacing: 0.7px;
-  padding: 0.7rem 24px;
+  padding: 0.7rem 22px;
   color: #e6f0ff;
   border-radius: 25px;
   position: relative;
@@ -14021,8 +14030,8 @@ body {
   bottom: 6px;
   left: 50%;
   width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #00bfff, #69e2ff);
+  height: 2px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
   border-radius: 2px;
   transform: translateX(-50%);
   transition: width 0.3s ease;
@@ -14031,14 +14040,14 @@ body {
 /* Hover & Active */
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
 .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-  color: #ffffff !important;
+  color: #007bff !important;
   background: linear-gradient(90deg, rgba(0,191,255,0.3), rgba(105,226,255,0.3));
   box-shadow: 0 4px 15px rgba(0,191,255,0.2);
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover::after,
 .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link::after {
-  width: 50%;
+  width: 40%;
 }
 
 /* ================= CLOSE BUTTON ================= */
@@ -14061,12 +14070,12 @@ body {
 
 /* ================= MOBILE STYLES ================= */
 @media (max-width: 991.98px) {
-  .navbar-collapse {
+    .navbar-collapse {
     background: black;
-    backdrop-filter: blur(14px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
-    z-index: 1050;
-    overflow-y: auto;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    margin-top: 15px;
   }
 
   .navbar-nav {
@@ -14075,17 +14084,13 @@ body {
   }
 
   .navbar-nav .nav-item {
-    width: 100%;
-    margin-bottom: 14px;
+    /* width: 100%; */
+    margin-bottom: 10px;
   }
 
   .navbar-nav .nav-link {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 0.8rem 0;
-    border-radius: 8px;
-    transition: background 0.3s;
+    font-size: 16px;
+    color: #222 !important;
   }
 
   .navbar-nav .nav-link:hover {
