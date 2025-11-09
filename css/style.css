@@ -14557,14 +14557,6 @@ html, body {
 
 /* Responsive Design */
 /* @media (max-width: 768px) {
-	.about-box {
-		padding: 30px 20px;
-	}
-
-	.about-text {
-		font-size: 0.95rem;
-	}
-
 	.custom-btn-group a {
 		padding: 8px 16px;
 		font-size: 0.9rem;
@@ -14578,11 +14570,15 @@ html, body {
 	}
 
 	.about-text {
-		font-size: 0.90rem;
-		line-height: 1.5; /* tighter vertical spacing */
-		word-spacing: normal; /* prevent auto expansion */
-		text-align: left; /* fixes wide word gaps from justification */
-	}
+    font-size: 0.9rem;
+    line-height: 1.4;
+    word-spacing: 0;           /* force normal word spacing */
+    letter-spacing: 0;         /* reset any inherited spacing */
+    text-align: left;          /* prevents wide justification gaps */
+    text-justify: none;        /* disables justify optimization */
+    white-space: normal;       /* prevents stretched lines */
+    hyphens: auto;             /* breaks long words instead of spacing them out */
+  }
 
 	/* .custom-btn-group {
 		flex-direction: column;
