@@ -14600,6 +14600,93 @@ html, body {
 }
 
 
+/* Contact Section Wrapper */
+.contact-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 15px;
+}
+
+/* Contact Outer Box */
+.contact-box {
+	background: linear-gradient(145deg, #f8f9fb, #e9ecef);
+	border-radius: 18px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+	padding: 50px 40px;
+	max-width: 1000px;
+	width: 100%;
+	transition: all 0.3s ease;
+}
+
+.contact-box:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Individual Contact Cards */
+.contact-card {
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 25px 10px;
+	margin: 10px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease;
+	flex: 1;
+}
+
+.contact-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons */
+.contact-card .icon span {
+	font-size: 2rem;
+	color: #007bff;
+}
+
+/* Headings & Text */
+.contact-card h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #222;
+	margin-bottom: 8px;
+}
+
+.contact-card p {
+	font-size: 0.95rem;
+	color: #555;
+	margin: 0;
+	word-wrap: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.contact-box {
+		padding: 30px 20px;
+	}
+
+	.contact-card {
+		margin: 10px 0;
+		padding: 20px;
+	}
+
+	.contact-card h3 {
+		font-size: 1rem;
+	}
+
+	.contact-card p {
+		font-size: 0.9rem;
+	}
+
+	.contact-card .icon span {
+		font-size: 1.8rem;
+	}
+}
+
+
 
 
 
