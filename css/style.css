@@ -14480,16 +14480,32 @@ html, body {
 
 /* Modern card design */
 .about-box {
-	background: linear-gradient(145deg, #f8f9fb, #e9ecef);
-	border: 1px solid #ddd;
-	border-radius: 18px;
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-	padding: 45px 50px;
-	max-width: 850px;
-	width: 100%;
-	margin: 0 auto; /* centers the box instead of text */
-	text-align: center; /* reset alignment */
-	transition: all 0.3s ease;
+  background: linear-gradient(145deg, #f8f9fb, #e9ecef);
+  border: 1px solid #ddd;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 45px 50px;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+/* Text inside about box */
+.about-text {
+  text-align: justify;          /* balanced block alignment */
+  text-justify: inter-word;     /* evenly distributes spacing */
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+  word-spacing: normal;
+  letter-spacing: 0.2px;
+  hyphens: auto;                /* breaks long words gracefully */
+  max-width: 95%;               /* prevents text from stretching edge-to-edge */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .about-box:hover {
@@ -14580,11 +14596,11 @@ html, body {
 
 @media (max-width: 768px) {
 	.about-box {
-		padding: 25px 18px;
+		padding: 25px 20px;
 	}
 
 	 .about-text {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.4;
     word-spacing: normal !important;
     letter-spacing: normal !important;
