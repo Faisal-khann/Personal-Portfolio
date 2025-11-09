@@ -14463,8 +14463,7 @@ html, body {
 }
 
 
-
-/* About Section Styles */
+/*============About Section====================*/
 .about-wrapper {
 	display: flex;
 	justify-content: center;
@@ -14579,16 +14578,16 @@ html, body {
 	}
 
 	.about-text {
-		font-size: 0.95rem;
+		font-size: 0.90rem;
 		line-height: 1.5; /* tighter vertical spacing */
 		word-spacing: normal; /* prevent auto expansion */
 		text-align: left; /* fixes wide word gaps from justification */
 	}
 
-	.custom-btn-group {
+	/* .custom-btn-group {
 		flex-direction: column;
-		gap: 12px;
-	}
+		gap: 12px; */
+	/* }
 
 	.custom-btn-group a {
 		padding: 10px 18px;
@@ -14596,11 +14595,10 @@ html, body {
 		width: 100%;
 		max-width: 240px;
 		margin: 0 auto;
-	}
+	} */
 }
 
-
-/* Contact Section Wrapper */
+/*===============Contact Section Wrapper================= */
 .contact-wrapper {
 	display: flex;
 	flex-direction: column;
