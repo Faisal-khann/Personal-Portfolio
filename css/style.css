@@ -14016,11 +14016,12 @@ textarea.form-control {
   width: 100%;
   z-index: 9999;
   background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
-  backdrop-filter: blur(14px);           /* soft blur for glass effect */
-  -webkit-backdrop-filter: blur(14px);   /* Safari support */
+  backdrop-filter: blur(10px);           /* soft blur for glass effect */
+  -webkit-backdrop-filter: blur(10px);   /* Safari support */
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* subtle divider line */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* smaller shadow */
   transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  height: 60px; /* reduced height */
 }
 /* On Scroll - more opaque */
 .scrolled-nav {
@@ -14031,17 +14032,17 @@ textarea.form-control {
 
 
 body {
-  padding-top: 70px; /* adjust for navbar height */
+  padding-top: 50px; /* adjust for navbar height */
 }
 
 /* ================= NAV LINKS ================= */
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.7px;
-  padding: 0.7rem 22px;
+  padding: 0.35rem 18px; /* ~5-6px top and bottom */
   color: #e6f0ff;
-  border-radius: 25px;
+  border-radius: 20px;
   position: relative;
   transition: all 0.35s ease;
 }
@@ -14093,12 +14094,13 @@ body {
 
 /* ================= MOBILE STYLES ================= */
 @media (max-width: 991.98px) {
-    .navbar-collapse {
-    background: black;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  .navbar-collapse {
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
+    padding: 10px 0;
   }
 
   .navbar-nav {
@@ -14108,15 +14110,15 @@ body {
 
   .navbar-nav .nav-item {
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .navbar-nav .nav-link {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 0.8rem 0;
-    border-radius: 8px;
+    padding: 0.5rem 0;
+    border-radius: 10px;
     transition: background 0.3s;
   }
 
@@ -14128,20 +14130,19 @@ body {
     background: none;
     border: none;
     color: #e6f0ff;
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
   }
 }
-
 
 /* Desktop spacing */
 @media (min-width: 992px) {
   .navbar-nav .nav-item {
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 16px;
   }
 }
 
